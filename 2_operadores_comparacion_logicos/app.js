@@ -16,13 +16,19 @@ console.log ( 5 + 3 ) // 8
 
 //pedir dos datos al usuario y sumarlo 
 
-let num1 = Number (prompt ('dame num1') )
-let num2 = Number (prompt ('dame num2') )
-let resultado = num1 + num2
-alert ("el resultado de tu suma es" + resultado) 
+/* let num1 = Number (prompt ('dame un numero') )
+let num2 = Number (prompt ('dame otro numero') )
+let suma = num1 + num2
+let resta = num1 - num2
+let multiplicacion = num1 * num2
+let division = num1 / num2
+alert ("el resultado de tu suma es: " + suma)
+alert ("la resta: "  + resta ) 
+alert ("la multiplicacion: "+ multiplicacion)
+alert ("la division: "+ division)  */
 
 
-
+console.log(`tu numero es ${num1}`)
 
 
 
