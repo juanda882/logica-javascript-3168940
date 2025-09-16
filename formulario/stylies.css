@@ -1,0 +1,118 @@
+.userPage {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background 0.4s ease; 
+}
+
+.login {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  width: 320px;
+}
+
+.form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center; 
+}
+
+.form legend {
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+.form .radio-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+  margin-top: 10px;
+}
+
+.form .radio-option {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #005bcc;
+}
+
+.userPage {
+  display: none;
+  text-align: center;
+}
+
+.userPage .card {
+  background: none;
+  box-shadow: none;
+  padding: 2rem;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.userPage .card:hover {
+  transform: translateY(-5px);
+}
+
+.text-equipo {
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-volver {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}

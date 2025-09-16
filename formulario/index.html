@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="login">
+    <form class="form">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="inputNombre" name="nombre" id="nombre">
+      <label for="color">Equipo</label>
+      <select name="color" id="color">
+        <option value="" disabled selected>Select color</option>
+        <option value="red">Rojo</option>
+        <option value="green">Verde</option>
+        <option value="orange">Naranja</option>
+      </select>
+
+      <fieldset>
+        <legend>Equipo</legend>
+        <div class="radio-group">
+          <label class="radio-option">
+            <input type="radio" value="gatos" name="equipo" class="input-radio" id="gatos">Gatos</label>
+          <label class="radio-option">
+            <input type="radio" value="mapaches" name="equipo" class="input-radio" id="mapaches">Mapaches</label>
+          <label class="radio-option">
+            <input type="radio" name="equipo" value="perros" class="input-radio" id="perros">Perros</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+
+
+    </form>
+  </div>
+
+  <div class="userPage">
+    <div class="card"></div>
+    <img class="img-equipo" src="..." alt="">
+    <h1 class="text-saludo">Hola Usuario</h1>
+    <p>Perteneces al equipo <span class="text-equipo">Mapaches</span> </p>
+    <button class="btn-volver">Volver</button>
+  </div>
+  </div>
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
