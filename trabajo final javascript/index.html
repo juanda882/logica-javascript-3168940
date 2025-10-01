@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Proyecto Final – JavaScript</title>
+  <link rel="stylesheet" href="stylie.css" />
+   <link rel="stylesheet" href="style-principal.css"
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="contenedor-header">
+      <h1>Proyecto Final – JavaScript</h1>
+      <nav>
+        <ul class="menu">
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+
+    <!-- SECCIÓN: CONTADOR INTERACTIVO -->
+    <section id="contador">
+  <h2>Contador Interactivo</h2>
+  <div class="contador-container">
+    <h1 class="pantalla">0</h1>
+    <div class="botones">
+      <button class="btn-menos">-</button>
+      <button class="btn-mas">+</button>
+    </div>
+  </div>
+</section>
+
+  <section id="galeria" class="seccion">
+  <h2>Galería Deslizante</h2>
+  <p id="titulo">Primera Imagen</p>
+
+  <div class="galeria-slider">
+    <div id="contenedor" class="contenedor-imgs">
+      <img src="img1 (3).jpg" alt="Imagen 1">
+      <img src="img2 (2).jpg" alt="Imagen 2">
+    </div>
+  </div>
+
+  <div class="galeria-botones">
+    <button id="Prev">Anterior</button>
+    <button id="Next">Siguiente</button>
+  </div>
+</section>
+
+<section id="scroll-tracker" class="seccion">
+  <h2>Seguimiento de Scroll</h2>
+
+  <div class="pelota"></div>
+
+  <div id="container-scroll">
+    <div id="main-scroll">
+      <div id="child-scroll">
+        <div id="datoValor">
+          <p id="valorVertical">V: 0</p>
+          <p id="valorHorizontal">H: 0</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <section id="lightbox" class="seccion">
+  <h2>Galería Lightbox</h2>
+
+  <div class="miniaturas">
+    <img class="min" src="mario.jpg" width="200" alt="Imagen 1">
+    <img class="min" src="mario2.jpg" width="200" alt="Imagen 2">
+  </div>
+
+  <!-- Ventana flotante -->
+  <div id="flotante">
+    <div id="cuadro"></div>
+    <div id="main-lightbox">
+      <div id="equis">X</div>
+      <div id="sig">›</div>
+      <div id="ant">‹</div>
+      <img id="imgprincipal" class="mainimg" src="mario.jpg" alt="Imagen ampliada">
+    </div>
+  </div>
+</section>
+
+<section id="formulario-dharma" class="seccion">
+  <h2>Descubre tu Vibración Musical 🎧</h2>
+
+  <div class="formulario-box">
+    <form class="formulario" id="form-vibracion">
+      <label for="nombre">¿Cómo te llamas?</label>
+      <input type="text" id="nombre" placeholder="Escribe tu nombre..." required>
+
+      <label for="aura">Elige tu color de aura</label>
+      <select id="aura" required>
+        <option value="" disabled selected>Selecciona uno</option>
+        <option value="azul">Azul</option>
+        <option value="violeta">Violeta</option>
+        <option value="dorado">Dorado</option>
+      </select>
+
+      <fieldset>
+        <legend>¿Con cuál vibras más?</legend>
+        <label><input type="radio" name="genero" value="trap" required> Trap</label>
+        <label><input type="radio" name="genero" value="lofi"> Lo-fi</label>
+        <label><input type="radio" name="genero" value="rap"> Rap</label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Resultado -->
+  <div class="resultado-box" style="display: none;">
+    <h3 class="mensaje-saludo">Hola, <span id="usuario-nombre">Usuario</span> 🎶</h3>
+    <p>Tu aura es <span id="usuario-aura">Dorada</span> y tu vibración es <span id="usuario-genero">Lo-fi</span>.</p>
+    <button id="btn-volver">Volver</button>
+  </div>
+</section>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Juan David Jiménez – Proyecto Final JavaScript</p>
+  </footer>
+<script src="app.js"></script>
+</body>
+</html>
